@@ -1,0 +1,21 @@
+Atividade 1:
+Escolher um tema para o projeto de um site one page, conforme modelo do site:
+html5css3.com.br
+
+Preencher o briefing (template), converter para pdf e anexar na pasta doc.
+
+Dicas de sites de banco de imagens gartuitas:
+pixabay
+iconfinder
+
+- Separar palavras chaves e textos para publicação no site
+- escolher um tipo de fonte 
+  (google fonts ou dafont.com)
+- Escolher um logotipo
+- Escolher uma imagem ou vídeo para o banner
+- Escolher uma foto de destaque
+- Escolher um vídeo de destaque
+- Escolher ícones para a seção de destaque, contatos e redes sociais
+- Definir cores em hexadecimal que serão usadas no projeto
+- Escolher 3 fotos pequenas para os cartões
+- Criar um documento pdf para download (cardápio, catálogo etc...)
