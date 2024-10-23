@@ -1,39 +1,50 @@
 @charset "UTF-8";
+/*Importação de Fontes do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&display=swap');
+/*CSS Reset (Compatibilizar com todos os navegadores)*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 
+}
+/*Layout (Estrutura do site) */
+body{
+    font-family: "Exo 2", sans-serif;
+    font-size: 1em; /*1em = 100% (Tamanho Padrão)*/
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/*cabeçalho */
+header {
+    height: 91px; /*Altura*/
+    background-color: #00ffff; /*Cor*/
+}
+/*Ajuste de tamanho do Logotipo*/
+#logo img{
+    width: 91px;  /*Largura*/
+    height: 91px;
 
-/* BreakPoints */
+}
 
 /* SmartPhone Portrait (levantado) */
 @media (min-width: 576px) {
-    body {
-        background-color: #A020F0;
-    }
+   
 }
-
-/* SmartPhone Landscape (deitado) */
-
 /* Tablet Portrait (levantado) */
 @media (min-width: 768px) {
-    body {
-        background-color: #00ff;
-    }
+   
 }
 /* Tablet Landscape (deitado) */
 @media (min-width: 992px) {
-    body {
-        background-color: #00ffff;
-    }
+   
 }
 /* PCs/Notebooks */
 @media (min-width: 1200px) {
-    body {
-        background-color: #00ffff;
-    }
+   
 }
-
 /* Telas FullHD /4K /SmartTV */
 @media (min-width: 1400px) {
-    body {
-        background-color: #ff0000;
-    }
+   
 }
