@@ -16,10 +16,15 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+/*Ajuste de tamanho dos lados*/
+.container{
+    margin: 0 auto;  /*centraliza o bloco*/
+}
+
 /*cabeçalho */
 header {
-    height: 91px; /*Altura*/
-    background-color: #00ffff; /*Cor*/
+    height: 45px; /*Altura*/
+    background-color: #FFA500; /*Cor*/
 }
 /*Ajuste de tamanho do Logotipo*/
 #logo img{
@@ -28,8 +33,21 @@ header {
     margin: 6px 0px 0px 8px;     /*margem geral*/
     /* margin-top: 6px;  margem superior*/
     /* margin-left: 8px; margem esquerda*/
-
+    
 }
+
+/* SmartPhone Land (deitado) */
+@media (min-width: 576px) {
+    /*cabeçalho */
+    #logo img {
+        margin:6px 0px 0px 0px;
+    }
+    .container {
+        max-width: 540px;   /*Tamanho max */
+        background-color: #FFA500; /*Cor*/
+    }
+}
+
 
 /* SmartPhone Portrait (levantado) */
 @media (min-width: 576px) {
@@ -37,17 +55,57 @@ header {
 }
 /* Tablet Portrait (levantado) */
 @media (min-width: 768px) {
-   
+   /*cabeçalho */
+   .container {
+    max-width: 720px;            /*Tamanho max */
+    background-color: #FFA500; /*Cor*/
+}
+    header {
+        height: 60px; /*Altura*/
+    }
+    #logo img{
+        width: 100px;  /*Largura*/
+        height: 100px; /*Altura*/
+    }
 }
 /* Tablet Landscape (deitado) */
 @media (min-width: 992px) {
-   
+   /*cabeçalho */
+    .container {
+        max-width: 960px; /*Tamanho max */
+        background-color: #FFA500; /*Cor*/
+    }
+
+
+
 }
 /* PCs/Notebooks */
 @media (min-width: 1200px) {
-   
+   /*cabeçalho */
+   .container{    
+        max-width: 1350px; /*Tamanho max */
+        background-color: #FFA500; /*Cor*/
+   }
+   header  {
+        height: 80px; /*Altura*/
+   }
+   #logo img{
+        width: 128px; /*Largura*/
+        height: 128px; /*Altura*/
+   }
 }
 /* Telas FullHD /4K /SmartTV */
 @media (min-width: 1400px) {
-   
+    /*cabeçalho */
+    .container{    /*Tamanho max */
+        max-width: 1350px;
+        background-color: #FFA500; /*Cor*/
+   }
+   header  {
+        height: 80px; /*Altura*/
+   }
+   #logo img{
+        width: 128px; /*Largura*/
+        height: 128px;  /*Altura*/
+   }
 }
