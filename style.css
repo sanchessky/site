@@ -23,8 +23,11 @@ header {
 }
 /*Ajuste de tamanho do Logotipo*/
 #logo img{
-    width: 91px;  /*Largura*/
-    height: 91px;
+    width: 64px;  /*Largura*/
+    height: 64px; /*Altura*/
+    margin: 6px 0px 0px 8px;     /*margem geral*/
+    /* margin-top: 6px;  margem superior*/
+    /* margin-left: 8px; margem esquerda*/
 
 }
 
