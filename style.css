@@ -7,6 +7,7 @@
     --branco: #fff;
     --azul: #78c9e4;
     --preto: #000000;
+    --vermelho: #ff0000;
 
 }
 
@@ -32,7 +33,10 @@ body{
 }
 /*Ajuste de tamanho dos lados*/
 .container{
-    margin: 0 auto;  /*centraliza o bloco*/
+    margin: 0 auto; /*centraliza o bloco*/
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -114,7 +118,7 @@ label {
    /*cabeçalho */
    .container {
     max-width: 720px;            /*Tamanho max */
-   background-color: #FFA500;
+   /*background-color: #FFA500;*/
 }
     header {
         height: 60px; /*Altura*/
@@ -143,11 +147,7 @@ label {
 }
 /* PCs/Notebooks */
 @media (min-width: 1200px) {
-   /*cabeçalho */
-   .container{    
-        max-width: 1350px; /*Tamanho max */
-        background-color: #FFA500; /*Cor*/
-   }
+     /*cabeçalho */
    header  {
         height: 80px; /*Altura*/
    }
@@ -155,13 +155,39 @@ label {
         width: 128px; /*Largura*/
         height: 128px; /*Altura*/
    }
+   .container{    
+        max-width: 1140px; /*Tamanho max */
+       /* background-color: #FFA500; Cor*/
+   }
+   /*transforma do menu*/
+   label{
+    display: none;
+   }
+   nav ul{
+    width: 100%;
+    height: auto;
+    position: static;
+    background-color: transparent; /*remover a cor do background-color*/
+   }
+   nav ul li{
+    float: left;
+    border: 0;
+    }
+        nav ul li a{
+    color: var(--azul)
+
+    }
+    nav ul li a:hover {
+    color: var(--vermelho);
+    
+}
 }
 /* Telas FullHD /4K /SmartTV */
 @media (min-width: 1400px) {
     /*cabeçalho */
     .container{    /*Tamanho max */
-        max-width: 1350px;
-        background-color: #FFA500; /*Cor*/
+        max-width: 1250px;
+        /*background-color: #FFA500; /*Cor*/
    }
    header  {
         height: 80px; /*Altura*/
