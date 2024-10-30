@@ -38,7 +38,17 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-
+.botao {
+    text-decoration: none;
+    color: var(--azul);
+    font-size: 1.3em;
+    font-weight: 1000;
+    align-self: center;
+    padding: 15px 10px;
+    border: 2px solid var(--laranja);
+    border-radius: 26px;
+    margin-top: 25px;
+}
 
 /* SmartPhone Portrait (levantado) */
 
