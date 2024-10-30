@@ -60,7 +60,7 @@ header {
 /* nav */
 nav ul{
     height: 100vh;  /*100vh - 100% altura da tela*/
-    background-color: var(--azul);
+    background-color: var(--laranja);
     list-style: none; /* remover bullets */
     width: 65%;
     position: fixed;
@@ -100,7 +100,30 @@ label {
     color: rgb(255, 165, 0); /* 0.5* = 50% de transparencia (0 a 1 (100%)*/
 
 }
+/*Banner*/
+main{
+    height: 100vh;
+    background: url(img/banner1.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+/*Textos*/
+main h1, h2 {
+ color: var(--branco);
+ text-shadow: #000 0,05em 0.05em 0.05em; /*efeito de sombra*/
+}
+main h1{
+    font-size: 4.5em;
+}
+main h2{
+    font-size: 3.5em;
+    margin-top: 9px;
 
+}
 /* SmartPhone Landscape (deitado) */
 @media (min-width: 576px) {
     .container {
@@ -133,6 +156,7 @@ label {
         right: -70%;
 
     }
+
 }
 /* Tablet Landscape (deitado) */
 @media (min-width: 992px) {
@@ -152,14 +176,14 @@ label {
         height: 80px; /*Altura*/
    }
    #logo img{
-        width: 128px; /*Largura*/
-        height: 128px; /*Altura*/
+        width: 1000px; /*Largura*/
+        height: 1000px; /*Altura*/
    }
    .container{    
         max-width: 1140px; /*Tamanho max */
        /* background-color: #FFA500; Cor*/
    }
-   /*transforma do menu*/
+   /*transformaçã do menu*/
    label{
     display: none;
    }
