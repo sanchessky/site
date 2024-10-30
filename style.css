@@ -1,6 +1,20 @@
 @charset "UTF-8";
 /*Importação de Fontes do Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&display=swap');
+/*Variáveis (criar variavel------root) */
+:root {
+    --laranja:  #FFA500;
+    --branco: #fff;
+    --azul: #78c9e4;
+    --preto: #000000;
+
+}
+
+
+
+
+
+
 /*CSS Reset (Compatibilizar com todos os navegadores)*/
 * {
     margin: 0;
@@ -21,10 +35,13 @@ body{
     margin: 0 auto;  /*centraliza o bloco*/
 }
 
-/*cabeçalho */
+
+/* SmartPhone Portrait (levantado) */
+
+    /*cabeçalho */
 header {
     height: 45px; /*Altura*/
-    background-color: #FFA500; /*Cor*/
+    /*background-color: #FFA500;Cor*/
 }
 /*Ajuste de tamanho do Logotipo*/
 #logo img{
@@ -33,32 +50,71 @@ header {
     margin: 6px 0px 0px 8px;     /*margem geral*/
     /* margin-top: 6px;  margem superior*/
     /* margin-left: 8px; margem esquerda*/
+
     
 }
+/* nav */
+nav ul{
+    height: 100vh;  /*100vh - 100% altura da tela*/
+    background-color: var(--azul);
+    list-style: none; /* remover bullets */
+    width: 65%;
+    position: fixed;
+    top: 45px;
+    right: -65%;
+    transition: all 0.7s;
+}
+nav ul li{
+    padding: 7px 10px; /*espacamento da borda */
+    border-bottom: 1px solid var(--preto); /*borda de baixo do conteúdo*/
+    text-align: right;
 
-/* SmartPhone Land (deitado) */
-@media (min-width: 576px) {
-    /*cabeçalho */
-    #logo img {
-        margin:6px 0px 0px 0px;
-    }
-    .container {
-        max-width: 540px;   /*Tamanho max */
-        background-color: #FFA500; /*Cor*/
-    }
+}
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none; /*remover sublinhado*/
 }
 
+/* Menu */
+#check{
+    display: none;
+}
+/*efeito de deslizar o menu*/
+#check:checked~ul{
+                                /*se cheack estiver "ticado",criar um esilo para ul*/
+        right: 0px;
 
-/* SmartPhone Portrait (levantado) */
+
+}
+    
+
+label {
+    font-size: 3em;
+    position: fixed;
+    top: -5px;
+    right: 5px;
+    color: rgb(255, 165, 0); /* 0.5* = 50% de transparencia (0 a 1 (100%)*/
+
+}
+
+/* SmartPhone Landscape (deitado) */
 @media (min-width: 576px) {
-   
+    .container {
+        max-width: 540px;   /*Tamanho max */
+        /*background-color: #FFA500;*/
+    }
+    #logo img{
+        width: 64px;  /*Largura*/
+        height: 64px; /*Altura*/
+        margin: 6px 0px 0px 8px; 
+}
 }
 /* Tablet Portrait (levantado) */
 @media (min-width: 768px) {
    /*cabeçalho */
    .container {
     max-width: 720px;            /*Tamanho max */
-    background-color: #FFA500; /*Cor*/
+   background-color: #FFA500;
 }
     header {
         height: 60px; /*Altura*/
@@ -67,13 +123,19 @@ header {
         width: 100px;  /*Largura*/
         height: 100px; /*Altura*/
     }
+    nav ul {
+        top:60px;
+        width: -65%;
+        right: -70%;
+
+    }
 }
 /* Tablet Landscape (deitado) */
 @media (min-width: 992px) {
    /*cabeçalho */
     .container {
         max-width: 960px; /*Tamanho max */
-        background-color: #FFA500; /*Cor*/
+       /* background-color: #FFA500; Cor*/
     }
 
 
@@ -107,5 +169,5 @@ header {
    #logo img{
         width: 128px; /*Largura*/
         height: 128px;  /*Altura*/
-   }
+}
 }
