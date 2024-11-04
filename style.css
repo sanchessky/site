@@ -124,7 +124,7 @@ main{
 /*Textos*/
 main h1, h2 {
  color: var(--branco);
- text-shadow: #000 0,05em 0.05em 0.05em; /*efeito de sombra*/
+ text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
 }
 main h1{
     font-size: 4.5em;
