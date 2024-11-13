@@ -133,15 +133,15 @@ main h1{
     font-size: 4.5em;
 }
 main h2{
-    font-size: 3.5em;
+    font-size: 2.0em;
     margin-top: 9px;
 }
-main h3{
+/*main h3{
     font-size: 1.0em;
     margin-top: 9px;
     color: var(--branco);
-    text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
-}
+    text-shadow: #000 0.05em 0.05em 0.05em; efeito de sombra
+}*/
 
 /*Destaque*/
 #destaque{
@@ -162,6 +162,14 @@ main h3{
 }
 */
 
+#imagemDestaque video {
+    border-radius: 20px; /* Borda arredondada com 20px */
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+    object-fit: cover; 
+}
+
 
 #imagemDestaque img {
     width: 200px;
@@ -172,15 +180,16 @@ main h3{
 }
 
 #textoDestaque{
-    color: var(--branco);
+    color: var(--laranja);
 }
 #textoDestaque h2{
     margin-bottom: 25px; /*espaçamento*/
     text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
+    color: var(--laranja);
 }
 /*Atenção ao sinal de "> REF ao elemento imediato*/
 #textoDestaque>p{
-    color: var(--branco);
+    color: var(--laranja);
     font-size: 1.5em;
     text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
     margin-bottom: 15px;
@@ -218,19 +227,22 @@ main h1, h2 {
        font-size: 4.5em;
    }
    main h2{
-       font-size: 3.5em;
+       font-size: 2.0em;
        margin-top: 9px;
    }
-   main h3{
-       font-size: 1.0em;
-       margin-top: 9px;
-       color: var(--branco);
-       text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
-   }
+
 
 /*destaque*/
 #destaque .container{
     flex-direction: row;
+}
+
+#imagemDestaque video {
+    border-radius: 20px; 
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    object-fit: cover; 
 }
 #imagemDestaque{
     margin-right: 50px;
@@ -269,13 +281,17 @@ main h1, h2 {
         margin-top: 15px;
     
     }
-    main h3{
-        font-size: 1.0em;
-        margin-top: 9px;
-        color: var(--branco);
-        text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
-    }
+
     /*Destaque*/
+
+    #imagemDestaque video {
+        border-radius: 20px; 
+        width: 100%; 
+        max-width: 600px; 
+        height: auto; 
+        object-fit: cover; 
+    }
+
     #imagemDestaque img{
         width: 440px;
         height: 440px;
@@ -331,12 +347,6 @@ main h1, h2 {
     main h1{
     font-size: 7.5em;
     }
-    main h3{
-        font-size: 1.5em;
-        margin-top: 9px;
-        color: var(--branco);
-        text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
-    }
 
 }
 /* Telas FullHD /4K /SmartTV */
@@ -355,18 +365,14 @@ main h1, h2 {
 }
 /*Ajuste do banner*/
 main h1{
-    font-size: 7.5em;
+    font-size: 6.5em;
 }
 main h2{
-    font-size: 5.5em;
+    font-size: 2.5em;
     margin-top: 15px;
 }
-main h3{
-    font-size: 1.0em;
-    margin-top: 9px;
-    color: var(--branco);
-    text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
-}
+
+
 /*Destaque*/
 #destaque{
     /*o código abaixo fixa o banner (efeito paraliax)*/
