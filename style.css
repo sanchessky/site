@@ -8,6 +8,7 @@
     --azul: #78c9e4;
     --preto: #000000;
     --vermelho: #ff0000;
+    --azulescuro: rgb(10, 5, 255);
 
 }
 
@@ -140,10 +141,61 @@ main h3{
     margin-top: 9px;
     color: var(--branco);
     text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
+}
 
+/*Destaque*/
+#destaque{
+    background: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px; /*epaçamento interno para não deixar a borda encostar no dispositivo*/
+}
+
+/*Organizando o container após o destaque o estilo é aplicado apenas ao container da seção de destaque*/
+#destaque .container{
+    flex-direction: column;
+    align-items: center;
+}
+/*para esconder a imagem usamos displat:none no container da imagem/para exibir novamente em telas maiores, usamos display:block*/
+/*#imagemDestaque{
+    display: none;
+}
+*/
+
+
+#imagemDestaque img {
+    width: 200px;
+    height: 200px;
+    /*arrendondar uma imagem quadrada*/
+    border-radius: 50%;
 
 }
 
+#textoDestaque{
+    color: var(--branco);
+}
+#textoDestaque h2{
+    margin-bottom: 25px; /*espaçamento*/
+    text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
+}
+/*Atenção ao sinal de "> REF ao elemento imediato*/
+#textoDestaque>p{
+    color: var(--branco);
+    font-size: 1.5em;
+    text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
+    margin-bottom: 15px;
+}
+.topicos{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+.topicos img{
+    margin-right: 15px;
+}
+.topicos p{
+    font-weight: 700;
+}
 /* SmartPhone Landscape (deitado) */
 @media (min-width: 576px) {
     .container {
@@ -154,6 +206,38 @@ main h3{
         width: 64px;  /*Largura*/
         height: 64px; /*Altura*/
         margin: 6px 0px 0px 8px; 
+}
+/*Textos*/
+
+main h1, h2 {
+    color: var(--branco);
+    text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
+    
+   }
+   main h1{
+       font-size: 4.5em;
+   }
+   main h2{
+       font-size: 3.5em;
+       margin-top: 9px;
+   }
+   main h3{
+       font-size: 1.0em;
+       margin-top: 9px;
+       color: var(--branco);
+       text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
+   }
+
+/*destaque*/
+#destaque .container{
+    flex-direction: row;
+}
+#imagemDestaque{
+    margin-right: 50px;
+}
+#imagemDestaque img{
+    width: 256px;
+    height: 256px;
 }
 }
 /* Tablet Portrait (levantado) */
@@ -184,6 +268,17 @@ main h3{
         font-size: 5.5em;
         margin-top: 15px;
     
+    }
+    main h3{
+        font-size: 1.0em;
+        margin-top: 9px;
+        color: var(--branco);
+        text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
+    }
+    /*Destaque*/
+    #imagemDestaque img{
+        width: 440px;
+        height: 440px;
     }
 }
 /* Tablet Landscape (deitado) */
@@ -236,6 +331,12 @@ main h3{
     main h1{
     font-size: 7.5em;
     }
+    main h3{
+        font-size: 1.5em;
+        margin-top: 9px;
+        color: var(--branco);
+        text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
+    }
 
 }
 /* Telas FullHD /4K /SmartTV */
@@ -251,5 +352,24 @@ main h3{
    #logo img{
         width: 128px; /*Largura*/
         height: 110px;  /*Altura*/
+}
+/*Ajuste do banner*/
+main h1{
+    font-size: 7.5em;
+}
+main h2{
+    font-size: 5.5em;
+    margin-top: 15px;
+}
+main h3{
+    font-size: 1.0em;
+    margin-top: 9px;
+    color: var(--branco);
+    text-shadow: #000 0.05em 0.05em 0.05em; /*efeito de sombra*/
+}
+/*Destaque*/
+#destaque{
+    /*o código abaixo fixa o banner (efeito paraliax)*/
+    background-attachment: fixed;
 }
 }
