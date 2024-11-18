@@ -10,7 +10,7 @@
     --vermelho: #ff0000;
     --azulescuro: rgb(10, 5, 255);
     --cinza: gray;
-
+    --cinzaescuro: rgb(48, 48, 48);
 }
 
 
@@ -29,10 +29,9 @@
 body{
     font-family: "Sour Gummy", sans-serif;
     font-size: 1em; /*1em = 100% (Tamanho Padrão)*/
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background-color: #000;
+   background-color: #000
    
 }
 /*Ajuste de tamanho dos lados*/
@@ -294,7 +293,7 @@ main h1, h2 {
     }
     nav ul {
         top:60px;
-        width: -65%;
+        width: 65%;
         right: -70%;
 
     }
