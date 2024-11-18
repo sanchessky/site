@@ -9,6 +9,7 @@
     --preto: #000000;
     --vermelho: #ff0000;
     --azulescuro: rgb(10, 5, 255);
+    --cinza: gray;
 
 }
 
@@ -75,7 +76,7 @@ nav ul{
     height: 100vh;  /*100vh - 100% altura da tela*/
     background-color: rgb(255, 165, 0, 0.2); /* 0.5* = 50% de transparencia (0 a 1 (100%)*/
     list-style: none; /* remover bullets */
-    width: 65%;
+    width: 50%;
     position: fixed;
     top: 45px;
     right: -65%;
@@ -88,7 +89,7 @@ nav ul li{
 
 }
 nav ul li a {
-    color: var(--preto);
+    color: var(--branco);
     text-decoration: none; /*remover sublinhado*/
 }
 
@@ -116,7 +117,7 @@ label {
 /*Banner*/
 main{
     height: 100vh;
-    background: url(img/banner-1.png);
+    background: url(img/bannegpt.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -137,6 +138,7 @@ main h1{
 main h2{
     font-size: 2.0em;
     margin-top: 9px;
+
 }
 
 
@@ -210,12 +212,13 @@ main h2{
 }
 
 #sobre h2, p{
-    color:var(--azul)
+    color:var(--azul);
+
 }
 #vteste iframe {
     width: 340px;
     height: 191px;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 
@@ -347,7 +350,7 @@ main h1, h2 {
        
 
    }
-   /*transformaçã do menu*/
+   /*transformação do menu*/
    label{
     display: none;
    }
@@ -379,7 +382,7 @@ main h1, h2 {
         
     }
     #vteste iframe {
-       margin: 0;
+       margin: 0px;
     }
 }
 /* Telas FullHD /4K /SmartTV */
@@ -419,6 +422,6 @@ main h2{
     
 }
 #vteste iframe {
-    margin: 0;
+    margin: 0px;
  }
 }
