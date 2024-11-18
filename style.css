@@ -31,6 +31,8 @@ body{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    background-color: #000;
+   
 }
 /*Ajuste de tamanho dos lados*/
 .container{
@@ -62,7 +64,7 @@ header {
 #logo img{
     width: 120px;  /*Largura*/
     height: 100px; /*Altura*/
-    margin: 40px 0px 0px 8px;     /*margem geral*/
+    margin: 40px 0px 0px 8px;   /*margem geral*/
     /* margin-top: 6px;  margem superior*/
     /* margin-left: 8px; margem esquerda*/
 
@@ -114,7 +116,7 @@ label {
 /*Banner*/
 main{
     height: 100vh;
-    background: url(img/banner1.png);
+    background: url(img/banner-1.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -136,16 +138,11 @@ main h2{
     font-size: 2.0em;
     margin-top: 9px;
 }
-/*main h3{
-    font-size: 1.0em;
-    margin-top: 9px;
-    color: var(--branco);
-    text-shadow: #000 0.05em 0.05em 0.05em; efeito de sombra
-}*/
+
 
 /*Destaque*/
 #destaque{
-    background: url(img/background.png);
+    background: url(img/background2.png);
     background-size: cover;
     background-position: center;
     padding: 50px 15px; /*epaçamento interno para não deixar a borda encostar no dispositivo*/
@@ -170,14 +167,6 @@ main h2{
     object-fit: cover; 
 }
 
-
-#imagemDestaque img {
-    width: 200px;
-    height: 200px;
-    /*arrendondar uma imagem quadrada*/
-    border-radius: 50%;
-
-}
 
 #textoDestaque{
     color: var(--laranja);
@@ -205,6 +194,33 @@ main h2{
 .topicos p{
     font-weight: 700;
 }
+
+
+/*sobre (o estilo sera aplicado apenas ao container que esta subordinado a section sobre)*/ 
+#sobre .container{
+    flex-direction: column;
+}
+
+#sobre {
+    padding: 50px 15px;
+}
+
+#sobre h2{
+    margin-bottom: 20px;
+}
+
+#sobre h2, p{
+    color:var(--azul)
+}
+#vteste iframe {
+    width: 340px;
+    height: 191px;
+    margin-top: 20px
+}
+
+
+
+/* Fim */
 /* SmartPhone Landscape (deitado) */
 @media (min-width: 576px) {
     .container {
@@ -251,7 +267,14 @@ main h1, h2 {
     width: 256px;
     height: 256px;
 }
+/*sobre*/
+#vteste iframe {
+    width: 560px;
+    height: 315px;
+    
 }
+}
+/* Fim */
 /* Tablet Portrait (levantado) */
 @media (min-width: 768px) {
    /*cabeçalho */
@@ -320,7 +343,9 @@ main h1, h2 {
    }
    .container{    
         max-width: 1140px; /*Tamanho max */
-       /* background-color: #FFA500; Cor*/
+       /* background-color: #FFA500; Cor*/   
+       
+
    }
    /*transformaçã do menu*/
    label{
@@ -347,7 +372,15 @@ main h1, h2 {
     main h1{
     font-size: 7.5em;
     }
-
+    /*sobre*/
+    #sobre .container{
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    #vteste iframe {
+       margin: 0;
+    }
 }
 /* Telas FullHD /4K /SmartTV */
 @media (min-width: 1400px) {
@@ -378,4 +411,14 @@ main h2{
     /*o código abaixo fixa o banner (efeito paraliax)*/
     background-attachment: fixed;
 }
+
+ /*sobre*/
+ #sobre .container{
+    flex-direction: row;
+    align-items: center;
+    
+}
+#vteste iframe {
+    margin: 0;
+ }
 }
