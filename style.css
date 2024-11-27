@@ -50,9 +50,9 @@ body {
     text-decoration: none;
     color: var(--azul);
     font-size: 1.3em;
-    font-weight: 1000;
+    font-weight: 700;
     align-self: center;
-    padding: 15px 10px;
+    padding: 5px 5px 5px 10px ;
     border: 2px solid var(--laranja);
     border-radius: 26px;
     margin-top: 25px;
@@ -99,7 +99,7 @@ nav ul {
 nav ul li {
     padding: 7px 10px;
     /*espacamento da borda */
-    border-bottom: 1px solid var(--preto);
+    border-bottom: 1px solid var(--azul);
     /*borda de baixo do conteúdo*/
     text-align: right;
 
@@ -255,14 +255,31 @@ p {
 
 }
 
+
+
 #vteste iframe {
     width: 340px;
     height: 191px;
     margin-top: 20px;
 }
 
-
-
+/*Faixa de Destaque*/
+#FaixaDestaque {
+    background: url(img/background2.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+}
+#FaixaDestaque .container {
+    flex-direction: column;
+}
+#textoFaixa h2 {
+    color: var(--branco);
+    margin-bottom: 15px;
+}
+#textoFaixa p {
+    margin-bottom: 50px;
+}
 /* Fim */
 /* SmartPhone Landscape (deitado) */
 @media (min-width: 576px) {
@@ -462,21 +479,23 @@ p {
     #sobre .container {
         flex-direction: row;
         align-items: center;
-        
-        
-
-    }
-    
-    #institucional h2 {
-        margin: 30px;
-    }
-
-    #institucional p {
-        margin: 30px;
     }
 
     #vteste iframe {
         margin: 0px;
+    }
+    /*Faixa de destaque*/
+    #FaixaDestaque {
+        background-attachment: fixed;
+        
+    }
+    #FaixaDestaque .container{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    #imagemFaixa img {
+        width: 320px;
+        height: 320;
     }
 }
 
@@ -523,8 +542,6 @@ p {
     #sobre .container {
         flex-direction: row;
         align-items: center;
-        
-
     }
 
     #vteste iframe {
