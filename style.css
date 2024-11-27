@@ -466,6 +466,14 @@ p {
         
 
     }
+    
+    #institucional h2 {
+        margin: 30px;
+    }
+
+    #institucional p {
+        margin: 30px;
+    }
 
     #vteste iframe {
         margin: 0px;
@@ -515,6 +523,7 @@ p {
     #sobre .container {
         flex-direction: row;
         align-items: center;
+        
 
     }
 
