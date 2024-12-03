@@ -39,7 +39,7 @@ body {
 
 /*Ajuste de tamanho dos lados*/
 .container {
-    margin: 0 auto;
+    margin: auto;
     /*centraliza o bloco*/
     display: flex;
     justify-content: space-between;
@@ -57,6 +57,38 @@ body {
     border-radius: 26px;
     margin-top: 25px;
 }
+.card {
+    width: 338px;
+    height: 560px;
+    margin-top: 15px;
+    background-color: var(--roxo);
+    border: 1px solid var(--preto);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+.card p {
+    text-align: left;
+    padding: 5px 40px 10px 40px;
+}
+
+.card a {
+    padding: 3px 60px;
+    /*border: 0;*/
+    background-color: rgb(219, 213, 213);
+    color: #000000;
+}
+
+/* FIM DO LAYOUT<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
 
 /* SmartPhone Portrait (levantado) */
 
@@ -280,6 +312,34 @@ p {
 #textoFaixa p {
     margin-bottom: 50px;
 }
+/* Seção de Conteudos (Cards) */
+#conteudo {
+    padding: 50px 0px;
+}
+
+#conteudo .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudo h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#todos {
+    color: var(--branco);
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /* Fim */
 /* SmartPhone Landscape (deitado) */
 @media (min-width: 576px) {
@@ -403,6 +463,10 @@ p {
         width: 440px;
         height: 440px;
     }
+     /**** Seção de conteudo (Cards) ****/
+     .card {
+        margin: 10px 10px;
+    }
 }
 
 /* Tablet Landscape (deitado) */
@@ -459,7 +523,7 @@ p {
 
     nav ul li {
         float: left;
-        border: 0;
+        border: 0px;
     }
 
     nav ul li a {
@@ -495,7 +559,7 @@ p {
     }
     #imagemFaixa img {
         width: 320px;
-        height: 320;
+        height: 320px;
     }
 }
 
