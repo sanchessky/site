@@ -86,6 +86,99 @@ body {
     background-color: rgb(219, 213, 213);
     color: #000000;
 }
+/* Estilo Geral do Rodapé */
+#contato {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#contato .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Contato */
+.contato-contato h2,
+.contato-redes h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.rodape-contato .contato-item,
+.rodape-redes .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.rodape-contato img,
+.rodape-redes img {
+    width: 30px;
+    height: 30px;
+}
+
+.rodape-contato a,
+.rodape-redes a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.rodape-contato a:hover,
+.rodape-redes a:hover {
+    color: #00acee;
+    /* Cor de destaque no hover */
+}
+
+/* Redes Sociais */
+.rodape-redes .social-icons p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Botão "Topo" */
+.rodape-topo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #f1a604;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.rodape-topo a:hover {
+    color: #ee8700;
+}
+
+.rodape-topo img {
+    width: 25px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+footer {
+    background-color: #222;
+}
+
+footer .container {
+    flex-direction: column;
+}
+
+#redesocial {
+    margin-right: 200px;
+    padding-top: 10px;
+}
 
 /* FIM DO LAYOUT<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -302,6 +395,13 @@ p {
     background-position: center;
     padding: 50px 15px;
 }
+
+#imagemFaixa img {
+
+    height: 200px;
+    width: 300px;
+
+}
 #FaixaDestaque .container {
     flex-direction: column;
 }
@@ -404,6 +504,11 @@ p {
         width: 560px;
         height: 315px;
 
+    }
+    #redesocial {
+        margin-left: 85px;
+        padding-top: 10px;
+        
     }
 }
 
