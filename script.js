@@ -5,7 +5,7 @@
 
 // Banner carrosel ------------
 const main = document.querySelector('main')
-const backgrounds = ['url(img/jogo.jpg)','url(img/jogo2.jpg)','url(img/jogo3.jpg)']
+const backgrounds = ['url(img/backgroundfaixa.png)','url(img/background1.png)','url(img/bannegpt1.png)' ]
 
 let indice = 0
 
