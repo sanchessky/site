@@ -68,11 +68,11 @@ body {
 }
 
 .card img {
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 30px 30px 30px 30px;
 }
 
 .card h3 {
-    margin-top: 10px;
+    margin-top: 9px;
 }
 
 .card p {
@@ -135,7 +135,7 @@ body {
 
 .rodape-contato a:hover,
 .rodape-redes a:hover {
-    color: #00acee;
+    color: #e49c01;
     /* Cor de destaque no hover */
 }
 
@@ -168,7 +168,7 @@ body {
 }
 
 footer {
-    background-color: #222;
+    background-color: #fd9a05;
 }
 
 footer .container {
@@ -176,9 +176,17 @@ footer .container {
 }
 
 #redesocial {
-    margin-right: 200px;
-    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
+
+#redesocial img {
+    width: 40px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
 
 /* FIM DO LAYOUT<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -440,6 +448,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 /* Fim */
 /* SmartPhone Landscape (deitado) */
 @media (min-width: 576px) {
@@ -506,9 +515,15 @@ p {
 
     }
     #redesocial {
-        margin-left: 85px;
-        padding-top: 10px;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    #redesocial img {
+        width: 40px; /* Ajuste conforme necessário */
+        height: auto;
     }
 }
 
@@ -572,6 +587,7 @@ p {
      .card {
         margin: 10px 10px;
     }
+    
 }
 
 /* Tablet Landscape (deitado) */
@@ -723,4 +739,9 @@ p {
     #vteste iframe {
         margin: 0px;
     }
+
+
+
+  
 }
+
