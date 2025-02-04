@@ -57,6 +57,7 @@ body {
     border-radius: 26px;
     margin-top: 25px;
 }
+
 .card {
     width: 338px;
     height: 560px;
@@ -78,6 +79,9 @@ body {
 .card p {
     text-align: left;
     padding: 5px 40px 10px 40px;
+    text-decoration: none;
+    color: var(--azul);
+
 }
 
 .card a {
